@@ -1,0 +1,321 @@
+2016/07/31 17:20:57 [error] [system.db.CDbCommand] Error in preparing SQL: DELETE FROM YiiCache WHERE expire>0 AND expire<1469978457
+in C:\xampp\htdocs\Yii\site\index.php (13)
+2016/07/31 17:20:58 [error] [system.db.CDbCommand] CDbCommand::execute() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such table: YiiCache. The SQL statement executed was: DELETE FROM YiiCache WHERE expire>0 AND expire<1469978457.
+in C:\xampp\htdocs\Yii\site\index.php (13)
+2016/07/31 17:52:29 [warning] [application] Failed to set unsafe attribute "category" of "News".
+in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php (109)
+in C:\xampp\htdocs\Yii\site\index.php (13)
+2016/07/31 17:52:37 [warning] [application] Failed to set unsafe attribute "category" of "News".
+in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php (135)
+in C:\xampp\htdocs\Yii\site\index.php (13)
+2016/08/01 03:07:51 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\Yii\framework\web\CController.php:1118
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('category/delete')
+#10 C:\xampp\htdocs\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\Yii\site\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Yii/site/category/delete/1
+---
+2016/08/01 03:14:06 [error] [exception.CException] CException: CategoryController and its behaviors do not have a method or closure named "model". in C:\xampp\htdocs\Yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\Yii\site\protected\controllers\CategoryController.php(106): CComponent->__call('model', Array)
+#1 [internal function]: CategoryController->actionDelete('1')
+#2 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CategoryController), Array)
+#3 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CategoryController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#13 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('category/delete')
+#14 C:\xampp\htdocs\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\Yii\site\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Yii/site/category/delete/1?ajax=category-grid
+HTTP_REFERER=http://localhost/Yii/site/category/admin
+---
+2016/08/01 03:14:28 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\Yii\site\protected\controllers\CategoryController.php:139
+Stack trace:
+#0 C:\xampp\htdocs\Yii\site\protected\controllers\CategoryController.php(105): CategoryController->loadModel('1')
+#1 [internal function]: CategoryController->actionDelete('1')
+#2 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CategoryController), Array)
+#3 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CategoryController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#13 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('category/delete')
+#14 C:\xampp\htdocs\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\Yii\site\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Yii/site/category/delete/1?ajax=category-grid
+HTTP_REFERER=http://localhost/Yii/site/category/admin
+---
+2016/08/01 03:14:46 [error] [exception.CHttpException.404] CHttpException: Запрашиваемая страница не существует. in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php:279
+Stack trace:
+#0 C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php(60): NewsController->loadModelBySlug('category/deleet...')
+#1 [internal function]: NewsController->actionView('category/deleet...')
+#2 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#3 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(NewsController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('news/view')
+#14 C:\xampp\htdocs\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\Yii\site\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Yii/site/category/deleet/3
+---
+2016/08/01 03:19:56 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\Yii\site\protected\controllers\CategoryController.php:140
+Stack trace:
+#0 C:\xampp\htdocs\Yii\site\protected\controllers\CategoryController.php(105): CategoryController->loadModel('1')
+#1 [internal function]: CategoryController->actionDelete('1')
+#2 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CategoryController), Array)
+#3 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CategoryController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#13 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('category/delete')
+#14 C:\xampp\htdocs\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\Yii\site\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Yii/site/category/delete/1
+---
+2016/08/01 03:20:21 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\Yii\site\protected\controllers\CategoryController.php:140
+Stack trace:
+#0 C:\xampp\htdocs\Yii\site\protected\controllers\CategoryController.php(105): CategoryController->loadModel('2')
+#1 [internal function]: CategoryController->actionDelete('2')
+#2 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CategoryController), Array)
+#3 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CategoryController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#13 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('category/delete')
+#14 C:\xampp\htdocs\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\Yii\site\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Yii/site/category/delete/2
+---
+2016/08/01 03:21:17 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\Yii\framework\web\CController.php:1118
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('category/delete')
+#10 C:\xampp\htdocs\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\Yii\site\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Yii/site/category/delete/2
+---
+2016/08/01 03:21:23 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\Yii\framework\web\CController.php:1118
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('category/delete')
+#10 C:\xampp\htdocs\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\Yii\site\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Yii/site/category/delete/3
+---
+2016/08/01 03:21:29 [error] [exception.CHttpException.404] CHttpException: Запрашиваемая страница не существует. in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php:279
+Stack trace:
+#0 C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php(60): NewsController->loadModelBySlug('category')
+#1 [internal function]: NewsController->actionView('category')
+#2 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#3 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(NewsController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('news/view')
+#14 C:\xampp\htdocs\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\Yii\site\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Yii/site/category/
+---
+2016/08/01 03:22:32 [error] [exception.CHttpException.404] CHttpException: Запрашиваемая страница не существует. in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php:280
+Stack trace:
+#0 C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php(60): NewsController->loadModelBySlug('cate')
+#1 [internal function]: NewsController->actionView('cate')
+#2 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#3 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(NewsController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('news/view')
+#14 C:\xampp\htdocs\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\Yii\site\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Yii/site/cate
+---
+2016/08/01 03:23:13 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php:280)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): NewsController->runAction()
+#4 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): NewsController->filterAccessControl()
+#7 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(265): NewsController->runActionWithFilters()
+#10 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): NewsController->run()
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\Yii\site\index.php(13): CWebApplication->run()
+REQUEST_URI=/Yii/site/cate
+in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php (280)
+in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php (60)
+in C:\xampp\htdocs\Yii\site\index.php (13)
+2016/08/01 03:26:53 [error] [exception.CException] CException: TopMenuBehavior and its behaviors do not have a method or closure named "getCategories". in C:\xampp\htdocs\Yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\Yii\site\protected\components\TopMenuBehavior.php(7): CComponent->__call('getCategories', Array)
+#1 C:\xampp\htdocs\Yii\framework\base\CComponent.php(261): TopMenuBehavior->getTopMenu()
+#2 C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php(17): CComponent->__call('getTopMenu', Array)
+#3 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(281): NewsController->init()
+#4 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('news/index')
+#5 C:\xampp\htdocs\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\Yii\site\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/Yii/site/
+---
+2016/08/01 03:39:57 [error] [exception.Error] Error: Call to undefined function getChildrenArray() in C:\xampp\htdocs\Yii\site\protected\models\Category.php:315
+Stack trace:
+#0 C:\xampp\htdocs\Yii\site\protected\components\TopMenuBehavior.php(26): Category->getCategories()
+#1 C:\xampp\htdocs\Yii\site\protected\components\TopMenuBehavior.php(7): TopMenuBehavior->getCategoriesForMenu()
+#2 C:\xampp\htdocs\Yii\framework\base\CComponent.php(261): TopMenuBehavior->getTopMenu()
+#3 C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php(17): CComponent->__call('getTopMenu', Array)
+#4 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(281): NewsController->init()
+#5 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('news/index')
+#6 C:\xampp\htdocs\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\Yii\site\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/Yii/site/
+---
+2016/08/01 03:44:09 [warning] [application] Failed to set unsafe attribute "category" of "News".
+in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php (136)
+in C:\xampp\htdocs\Yii\site\index.php (13)
+2016/08/01 03:44:36 [warning] [application] Failed to set unsafe attribute "category" of "News".
+in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php (136)
+in C:\xampp\htdocs\Yii\site\index.php (13)
+2016/08/01 03:44:44 [warning] [application] Failed to set unsafe attribute "category" of "News".
+in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php (136)
+in C:\xampp\htdocs\Yii\site\index.php (13)
+2016/08/01 03:45:13 [warning] [application] Failed to set unsafe attribute "category" of "News".
+in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php (136)
+in C:\xampp\htdocs\Yii\site\index.php (13)
+2016/08/01 03:52:26 [warning] [application] Failed to set unsafe attribute "category" of "News".
+in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php (136)
+in C:\xampp\htdocs\Yii\site\index.php (13)
+2016/08/01 03:52:35 [warning] [application] Failed to set unsafe attribute "category" of "News".
+in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php (136)
+in C:\xampp\htdocs\Yii\site\index.php (13)
+2016/08/01 03:52:43 [warning] [application] Failed to set unsafe attribute "category" of "News".
+in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php (136)
+in C:\xampp\htdocs\Yii\site\index.php (13)
+2016/08/01 03:52:53 [warning] [application] Failed to set unsafe attribute "category" of "News".
+in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php (136)
+in C:\xampp\htdocs\Yii\site\index.php (13)
+2016/08/01 03:53:30 [warning] [application] Failed to set unsafe attribute "category" of "News".
+in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php (136)
+in C:\xampp\htdocs\Yii\site\index.php (13)
+2016/08/01 04:00:57 [warning] [application] Failed to set unsafe attribute "category" of "News".
+in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php (136)
+in C:\xampp\htdocs\Yii\site\index.php (13)
+2016/08/01 04:01:12 [warning] [application] Failed to set unsafe attribute "category" of "News".
+in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php (136)
+in C:\xampp\htdocs\Yii\site\index.php (13)
+2016/08/01 04:01:20 [warning] [application] Failed to set unsafe attribute "category" of "News".
+in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php (136)
+in C:\xampp\htdocs\Yii\site\index.php (13)
+2016/08/01 04:02:29 [warning] [application] Failed to set unsafe attribute "category" of "News".
+in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php (136)
+in C:\xampp\htdocs\Yii\site\index.php (13)
+2016/08/01 04:02:38 [warning] [application] Failed to set unsafe attribute "category" of "News".
+in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php (136)
+in C:\xampp\htdocs\Yii\site\index.php (13)
+2016/08/01 04:02:46 [warning] [application] Failed to set unsafe attribute "category" of "News".
+in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php (136)
+in C:\xampp\htdocs\Yii\site\index.php (13)
+2016/08/01 04:02:53 [warning] [application] Failed to set unsafe attribute "category" of "News".
+in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php (136)
+in C:\xampp\htdocs\Yii\site\index.php (13)
+2016/08/01 04:03:00 [warning] [application] Failed to set unsafe attribute "category" of "News".
+in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php (136)
+in C:\xampp\htdocs\Yii\site\index.php (13)
+2016/08/01 04:03:07 [warning] [application] Failed to set unsafe attribute "category" of "News".
+in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php (136)
+in C:\xampp\htdocs\Yii\site\index.php (13)
+2016/08/01 04:06:43 [warning] [application] Failed to set unsafe attribute "category" of "News".
+in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php (110)
+in C:\xampp\htdocs\Yii\site\index.php (13)
+2016/08/01 04:06:59 [warning] [application] Failed to set unsafe attribute "category" of "News".
+in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php (136)
+in C:\xampp\htdocs\Yii\site\index.php (13)
+2016/08/01 04:07:45 [warning] [application] Failed to set unsafe attribute "category" of "News".
+in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php (136)
+in C:\xampp\htdocs\Yii\site\index.php (13)
+2016/08/01 04:10:53 [warning] [application] Failed to set unsafe attribute "category" of "News".
+in C:\xampp\htdocs\Yii\site\protected\controllers\NewsController.php (136)
+in C:\xampp\htdocs\Yii\site\index.php (13)
