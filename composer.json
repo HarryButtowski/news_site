@@ -1,0 +1,6 @@
+{
+  "name": "HarryButtowski/news_site",
+  "require": {
+    "yiisoft/yii": "1.1.17"
+  }
+}
